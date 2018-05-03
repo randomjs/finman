@@ -11,4 +11,4 @@ class MongoHelper:
 
         
     def get_collection(self, name):
-        return self.__mongo_client[self.database].getCollection(name)
+        return self.__mongo_client[self.__database][name]
